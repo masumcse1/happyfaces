@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16435365288250" configfile="/happyfaces/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="562" id="pf16435366017171" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16435366017172 pf16435366017183 pf16435366017184" path="/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/customers.xhtml" x="338" y="178" id="pf16435366017185" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf16435366017172" path="/pages/customers.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/accounts.xhtml" x="338" y="562" id="pf16435366017186" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf16435366017183" path="/pages/accounts.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/operations.xhtml" x="338" y="946" id="pf16435366017187" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf16435366017184" path="/pages/operations.xhtml"/>
+  <links id="pf16435366017172" target="pf16435366017185" source="pf16435366017171" outcome="customers"/>
+  <links id="pf16435366017183" target="pf16435366017186" source="pf16435366017171" outcome="accounts"/>
+  <links id="pf16435366017184" target="pf16435366017187" source="pf16435366017171" outcome="operations"/>
+</pageflow:Pageflow>
